@@ -1,0 +1,6 @@
+{
+    "ssid": "YOUR WIFI SSID",
+    "key": "YOUR WIFI PASSWORD",
+    "room": "LOCATION NAME",
+    "url": "SERVER ROUTE"
+}
