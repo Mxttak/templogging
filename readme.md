@@ -2,6 +2,8 @@
 
 This is a project for lightweight temperature tracking. It includes code for micropython (https://micropython.org/) which reads temperature and humidity from a DHT11 sensor every 10min and transmits it to the server which renders the measurements in two plotly plots. The microcontroller code is tailored towards ESP-8266 where the device goes into deep sleep between measurements.
 
+![width=400px](doc/webpage.png)
+
 # Wiring Diagram
 
 TODO
