@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <!-- D3.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+ 
+<head>
+    <style type="text/css">
+        .header{
+            text-align: center;
+            background-color: rgb(136, 185, 229);
+            height: 70px;
+            line-height: 70px;
+        }
+        .chart{
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="header">
+        <h2>
+            Logging Overview
+        </h2>
+    </div>
+ 
+    <div id="temperature_chart" class="temperature_chart"></div>
+
+    <div id="humidity_chart" class="humidity_chart"></div>
+</body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var tempeature_graph = {{temperature_graph_json | safe}};
+    var humidity_graph = {{humidity_graph_json | safe}};
+    Plotly.plot('temperature_chart',tempeature_graph,{});   
+    Plotly.plot('humidity_chart',humidity_graph,{});
+</script>
+</html>

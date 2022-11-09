@@ -1,0 +1,6 @@
+{
+    "admissible_tokens": [
+        "1234"
+    ],
+    "path_to_database": "measurements.txt"
+}
